@@ -16,8 +16,8 @@ source_document: D-quints-overview-v1.0.md
 | **プロジェクト名** | d-quints-site |
 | **目的** | 技術提言書を読みやすい静的 Web ページとして公開する |
 | **公開対象** | 日本国内のソフトウェアエンジニア、情シス担当者、開発責任者 |
-| **公開前提** | **GitHub リポジトリ公開**（ソース・Spec・Convention を同梱） |
-| **ホスティング** | **GitHub Pages**（`dist/` をデプロイ） |
+| **公開前提** | **GitHub リポジトリ公開** + **so-ken.org 本番サイト** |
+| **ホスティング** | 本番: `so-ken.org/research/d-quints/`。ソース: GitHub |
 | **Artefact 分類** | 層 A（Spec 完全派生）: HTML / CSS / JS。層 B: ビルド設定。層 C: なし |
 
 ### GitHub 公開の位置づけ
@@ -53,20 +53,20 @@ source_document: D-quints-overview-v1.0.md
 | **保守** | 提言書改訂時は Spec 更新 → 再生成。手編集禁止（Hotfix 例外は Convention 参照） |
 | **ブラウザ** | 最新 2 バージョンの Chrome / Firefox / Safari / Edge |
 
-### ドメイン・URL（GitHub 公開）
+### ドメイン・URL（本番）
 
 | 項目 | 値 |
 |---|---|
-| **GitHub リポジトリ（想定）** | `https://github.com/so-ken-org/d-quints` |
-| **GitHub Pages URL（想定）** | `https://so-ken-org.github.io/d-quints/` |
-| **ベースパス** | `/d-quints/`（`*.github.io/<repo>/` 形式。カスタムドメイン時は `/` に変更） |
-| **canonical** | `https://so-ken-org.github.io/d-quints/` |
+| **公式サイト URL** | `https://so-ken.org/research/d-quints/` |
+| **GitHub リポジトリ** | `https://github.com/so-ken-org/d-quints` |
+| **ベースパス** | `/research/d-quints/` |
+| **canonical** | `https://so-ken.org/research/d-quints/` |
 
-> 組織名・リポジトリ名が異なる場合は、公開前に本表と `src/index.html` の canonical を更新する。
+> ビルド成果物 `dist/` の中身を `so-ken.org` 上の `/research/d-quints/` にアップロードする。
 
 ### OPEN
 
-- `OPEN:` カスタムドメイン採用時の canonical 差し替え
+- `OPEN:` OGP 画像（`og:image`）— 初期リリースでは省略可
 
 ---
 
@@ -233,7 +233,8 @@ source_document: D-quints-overview-v1.0.md
 | `<meta name="description">` | D-quints（Domain-Driven Design・Document-Driven Development・AI特性の融合）は、構造化された仕様書をSSOTとしAIをコンパイラとして位置づける開発モデル。3段階AI活用モデルによるコスト最適化を主軸とする技術提言書。 |
 | `<meta name="author">` | 村田 純一 |
 | `<meta name="keywords">` | Spec-Driven Development, LLM, AIコーディング, SSOT, DDD, 仕様駆動 |
-| `<link rel="canonical">` | 公開 URL（`OPEN:` 確定後） |
+| `<link rel="canonical">` | `https://so-ken.org/research/d-quints/` |
+| `og:url` | canonical と同一 |
 | `og:title` | title と同一 |
 | `og:description` | description と同一 |
 | `og:type` | article |
@@ -365,5 +366,4 @@ dist/（デプロイ可能な完成物）
 
 ## OPEN
 
-- `OPEN:` カスタムドメイン採用時の canonical 差し替え
 - `OPEN:` OGP 画像（`og:image`）の要否 — 初期リリースでは省略可。追加時は Spec 改訂

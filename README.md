@@ -6,7 +6,8 @@
 |---|---|
 | **著者** | 村田 純一 / [一般社団法人 創研](https://so-ken.org) |
 | **文書** | [技術提言書 v1.0](./D-quints-overview-v1.0.md) |
-| **公開サイト** | [d-quints-site](./d-quints-site/)（静的 Web ページ） |
+| **公開サイト** | **https://so-ken.org/research/d-quints/** |
+| **ソース** | [d-quints-site](./d-quints-site/)（本リポジトリ） |
 | **ライセンス** | © 2026 村田 純一 / 一般社団法人 創研. All rights reserved. |
 
 ---
@@ -48,17 +49,20 @@ https://github.com/so-ken-org/d-quints
 
 組織名・リポジトリ名は公開時に合わせて更新してください。
 
-### GitHub Pages
+### 公開 URL
 
-ビルド成果物 `d-quints-site/dist/` を GitHub Pages にデプロイします。
-
-| 項目 | 値（想定） |
+| 項目 | URL |
 |---|---|
-| **公開 URL** | `https://so-ken-org.github.io/d-quints/` |
-| **ソースブランチ** | `main` |
-| **ビルド** | ローカルまたは GitHub Actions で `npm run build` 後、`dist/` を配信 |
+| **公式サイト（本番）** | **https://so-ken.org/research/d-quints/** |
+| **ソース・提言書 MD** | https://github.com/so-ken-org/d-quints |
 
-詳細な手順は [`d-quints-site/README.md`](./d-quints-site/README.md) を参照してください。
+ビルド成果物 `d-quints-site/dist/` を `so-ken.org` の `/research/d-quints/` に配置する。
+
+| 項目 | 値 |
+|---|---|
+| **GitHub リポジトリ** | `https://github.com/so-ken-org/d-quints` |
+| **ベースパス** | `/research/d-quints/` |
+| **canonical** | `https://so-ken.org/research/d-quints/` |
 
 ### 主要リンク（GitHub 上）
 

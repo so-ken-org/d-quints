@@ -247,7 +247,7 @@ const OUTPUT = 'dist/index.html';
 | **コミット対象** | `spec/`, `convention/`, `src/`, `scripts/`, `package.json`, `package-lock.json`, ルート `README.md`, `D-quints-overview-v1.0.md` |
 | **dist/** | GitHub Actions でビルド・デプロイする場合は `.gitignore` のまま。手動デプロイ時はビルド後に `gh-pages` 等へ配信 |
 | **原稿 MD** | リポジトリルートの `D-quints-overview-v1.0.md` |
-| **公開サイト URL** | `https://so-ken-org.github.io/d-quints/`（GitHub Pages） |
+| **公開サイト URL** | `https://so-ken.org/research/d-quints/` |
 | **リポジトリ README** | Spec + Convention を SSOT とした生成物である旨を記載（ルート `README.md`） |
 
 ---

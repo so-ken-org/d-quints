@@ -44,22 +44,13 @@ npm run preview
 
 ## GitHub Pages へのデプロイ
 
-### 手動デプロイ
+本番は **so-ken.org** を使用する。GitHub Pages は使わない。
 
-1. `npm run build` で `dist/` を生成
-2. `dist/` の内容を GitHub Pages の公開ブランチ（例: `gh-pages`）または Actions 成果物として配信
-
-### GitHub Actions（推奨）
-
-`main` への push 時にビルドし、`d-quints-site/dist` を Pages にデプロイする workflow を追加する。
-
-| 設定項目 | 推奨値 |
+| 項目 | 値 |
 |---|---|
-| **公開 URL（想定）** | `https://so-ken-org.github.io/d-quints/` |
-| **canonical** | 上記 URL（`src/index.html` の `<link rel="canonical">` と一致） |
-| **ベースパス** | リポジトリ名が `d-quints` の場合は `/d-quints/`。カスタムドメイン使用時は `/` |
-
-> リポジトリ名・組織名が異なる場合は `spec/site-overview.md` の URL 定義を更新し、再ビルドしてください。
+| **本番 URL** | https://so-ken.org/research/d-quints/ |
+| **デプロイ先** | `so-ken.org` の `/research/d-quints/` |
+| **手順** | `npm run build` → `dist/` の中身を FTP 等でアップロード |
 
 ---
 
