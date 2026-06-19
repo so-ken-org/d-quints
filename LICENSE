@@ -1,0 +1,23 @@
+Creative Commons Attribution 4.0 International
+
+Copyright (c) 2026 村田 純一 / 一般社団法人 創研 (https://so-ken.org)
+
+This work is licensed under the Creative Commons Attribution 4.0 International
+License. You are free to share and adapt this material for any purpose,
+including commercially, provided that you give appropriate credit, indicate
+if changes were made, and link to the license.
+
+To view a copy of this license, visit:
+https://creativecommons.org/licenses/by/4.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Scope:
+- D-quints-overview-v1.0.md (technical position paper)
+- d-quints-site/spec/ (design specification)
+- d-quints-site/convention/ (coding conventions)
+- d-quints-site/src/, d-quints-site/scripts/ (site artefacts)
+
+Attribution example:
+  "D-quints 概論" by 村田 純一 / 一般社団法人 創研, licensed under CC BY 4.0

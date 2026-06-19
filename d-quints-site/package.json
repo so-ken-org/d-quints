@@ -1,0 +1,16 @@
+{
+  "name": "d-quints-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "D-quints 技術提言書 公開サイト",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "preview": "npx serve dist"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "marked": "^15.0.12"
+  }
+}
